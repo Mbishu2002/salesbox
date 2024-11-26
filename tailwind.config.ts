@@ -55,6 +55,22 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		keyframes: {
+  			float: {
+  				'0%, 100%': { 
+  					transform: 'translateY(0)',
+  					boxShadow: '0 4px 25px rgba(0,0,0,0.1)'
+  				},
+  				'50%': { 
+  					transform: 'translateY(-5px)',
+  					boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+  				},
+  			}
+  		},
+  		animation: {
+  			'float': 'float 3s ease-in-out infinite',
+  			'float-delayed': 'float 3s ease-in-out 1.5s infinite',
   		}
   	}
   },
