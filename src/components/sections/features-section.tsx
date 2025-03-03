@@ -9,16 +9,14 @@ export function FeaturesSection() {
         <div className="flex items-center justify-between mb-16">
           <div className="flex items-center gap-32">
             <h2 className="text-[40px] font-bold text-[#2D3748]">
-              Our Features
-              <br />
-              You Can Get
+              Everything You Need To Manage Your Business
             </h2>
             <p className="text-gray-500 text-lg max-w-[400px]">
-              We offer a variety of interesting features that you can help increase your productivity at work and manage your project easily
+              Track inventory, monitor finances, analyze customer interactions, and optimize operations through integrated business intelligence tools
             </p>
           </div>
           <button className="bg-[#2B82FE] text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors text-base font-medium whitespace-nowrap">
-            Get Started
+            Start Managing Today
           </button>
         </div>
 
@@ -40,7 +38,7 @@ export function FeaturesSection() {
           <div className="absolute -left-8 bottom-[55px] bg-white rounded-xl shadow-[0_4px_25px_rgba(0,0,0,0.1)] p-4 flex items-center gap-4 animate-float">
             <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gray-100">
               <Image
-                src="/resources/profile-avatar.jpg"
+                src="https://images.unsplash.com/photo-1530785602389-07594beb8b73?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjB3b21hbiUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
                 alt="Profile"
                 fill
                 className="object-cover"
@@ -62,7 +60,7 @@ export function FeaturesSection() {
             </div>
             <div>
               <p className="font-medium text-gray-900">Money Transfer Successful</p>
-              <p className="text-sm text-gray-500">$245.00</p>
+              <p className="text-sm text-gray-500">245.00 FCFA</p>
             </div>
           </div>
 
@@ -74,7 +72,7 @@ export function FeaturesSection() {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Total Sales</p>
-                <p className="font-semibold text-gray-900">$12,345</p>
+                <p className="font-semibold text-gray-900">12,345 FCFA</p>
               </div>
             </div>
           </div>
@@ -86,7 +84,7 @@ export function FeaturesSection() {
                 <Clock className="w-5 h-5 text-purple-500" />
               </div>
               <div>
-                <p className="text-sm text-gray-500">Active Users</p>
+                <p className="text-sm text-gray-500">Active Customers</p>
                 <p className="font-semibold text-gray-900">1,234</p>
               </div>
             </div>
@@ -103,7 +101,8 @@ export function FeaturesSection() {
             <div>
               <h3 className="text-xl font-bold mb-3">Real-Time Inventory Tracking</h3>
               <p className="text-gray-500 leading-relaxed">
-                Plan, collaborate, and publishing your content that drives meaningful engagement and growth for your brand
+                Track inventory levels in real-time while monitoring business finances, customer interactions, 
+                and key performance indicators through integrated dashboards and reports
               </p>
             </div>
           </div>

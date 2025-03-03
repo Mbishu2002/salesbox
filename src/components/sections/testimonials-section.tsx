@@ -6,22 +6,34 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'Product Manager',
-    content: '"It was a great experience using SalesBox! The interface is intuitive and the features are exactly what we needed."',
-    image: '/testimonial1.jpg',
+    name: 'Claire Ngo',
+    role: 'Pharmacy Chain Owner',
+    content: '"With Salesbox, we reduced medication stockouts by 75% across our 12 locations in Yaoundé. The inventory alerts are lifesavers!"',
+    image: 'https://plus.unsplash.com/premium_photo-1682129951679-c56d2f87db06?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJsYWNrJTIwcGhhcm1hY2lzdHxlbnwwfHwwfHx8MA%3D%3D',
   },
   {
-    name: 'Michael Chen',
-    role: 'Operations Manager',
-    content: '"The seamless offline and online sync capability has made our operations much more efficient. We can now work from anywhere without worrying about connectivity issues."',
-    image: '/testimonial2.jpg',
+    name: 'Emmanuel Mbakop',
+    role: 'Textile Manufacturing CEO',
+    content: '"Our export documentation time dropped from 3 days to 4 hours using Salesbox. Now we ship to 8 Central African countries weekly."',
+    image: 'https://th.bing.com/th/id/OIP.YvceHSfMGLC4te56FPOdNQHaFz?w=241&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7',
   },
   {
-    name: 'Emily Davis',
-    role: 'Sales Director',
-    content: '"The detailed sales reports have given us valuable insights into our business performance. We can now make data-driven decisions with confidence."',
-    image: '/testimonial3.jpg',
+    name: 'Arnold Enow',
+    role: 'Farmer',
+    content: '"Tracking produce from Bamenda farms to Douala port became seamless. We\'ve increased shipments by 40% this quarter."',
+    image: 'https://plus.unsplash.com/premium_photo-1678344151150-4a42c45453d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QkxBQ0slMjBGQVJNRVJ8ZW58MHx8MHx8fDA%3D',
+  },
+  {
+    name: 'Marcelline Eteme',
+    role: 'Supplies Distributor',
+    content: '"The financial reports helped us secure a 50 million FCFA loan to expand across Littoral Region. Game changer!"',
+    image: 'https://th.bing.com/th/id/OIP.aOaZqL9JpSeaODS_VqrGkwHaE7?w=270&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+  },
+  {
+    name: 'Didier Ndifor',
+    role: 'Transport Logistics Owner',
+    content: '"Route optimization features cut our fuel costs by 30% on Douala-Bafoussam corridor. Essential for any Cameroonian business."',
+    image: 'https://th.bing.com/th/id/OIP.r8i7R7UAvTGPAsxngf9ScAHaFo?w=232&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
   },
 ]
 
@@ -40,8 +52,8 @@ export function TestimonialsSection() {
     <section className="py-20 bg-[#1E293B]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-white mb-4">Our User Kind Words</h2>
-          <p className="text-gray-400">Here's what our customers have to say about their experience</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Customer Success Stories</h2>
+          <p className="text-gray-400">See how businesses are transforming their operations</p>
         </div>
 
         <div className="relative">
@@ -63,14 +75,16 @@ export function TestimonialsSection() {
                     </div>
                     <p className="text-gray-300 mb-6">{testimonial.content}</p>
                     <div className="flex items-center">
-                      <Image
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        width={48}
-                        height={48}
-                        className="rounded-full mr-4"
-                      />
-                      <div>
+                      <div className="relative h-12 w-12 rounded-full overflow-hidden border-2 border-[#2B82FE] flex-shrink-0">
+                        <Image
+                          src={testimonial.image}
+                          alt={testimonial.name}
+                          width={48}
+                          height={48}
+                          className="object-cover aspect-square"
+                        />
+                      </div>
+                      <div className="ml-4">
                         <h4 className="text-white font-medium">{testimonial.name}</h4>
                         <p className="text-gray-400 text-sm">{testimonial.role}</p>
                       </div>

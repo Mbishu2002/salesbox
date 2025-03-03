@@ -6,21 +6,21 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Product</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">Solutions</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="hover:text-white">
-                  Features
+                  Inventory Management
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Pricing
+                  Financial Tracking
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Security
+                  Customer CRM
                 </Link>
               </li>
             </ul>
@@ -39,18 +39,23 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link href="/contact" className="hover:text-white">
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="hover:text-white">
                   Documentation
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-white">
+                  Help Center
                 </Link>
               </li>
               <li>
@@ -69,17 +74,17 @@ export function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link href="/policies/privacy-policy" className="hover:text-white">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link href="/policies/terms-of-service" className="hover:text-white">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link href="/policies/cookie-policy" className="hover:text-white">
                   Cookie Policy
                 </Link>
               </li>
@@ -87,7 +92,10 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800">
-          <p>&copy; {new Date().getFullYear()} SalesBox. All rights reserved.</p>
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} Salesbox. All rights reserved.<br/>
+            <span className="text-gray-500">Headquarters: Douala, Cameroon</span>
+          </p>
         </div>
       </div>
     </footer>

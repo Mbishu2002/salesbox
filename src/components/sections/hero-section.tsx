@@ -1,6 +1,27 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight, Play, Shield, Currency, Server, CreditCard, Car, Laptop } from 'lucide-react'
+
+// Add the downloadBlob function
+async function downloadBlob(blobUrl: string, fileName: string) {
+  try {
+    const response = await fetch(blobUrl);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const blob = await response.blob();
+    const objectUrl = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = objectUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(objectUrl);
+  } catch (error) {
+    console.error('Error downloading the blob:', error);
+  }
+}
 
 export function HeroSection() {
   return (
@@ -28,6 +49,12 @@ export function HeroSection() {
                 <Play className="mr-2 h-4 w-4 text-[#2B82FE]" fill="currentColor" />
                 Watch Demo
               </button>
+              <button
+                onClick={() => downloadBlob('https://your-vercel-blob-url', 'salesbox-offline.zip')}
+                className="flex items-center justify-center px-6 py-3 border border-[#2B82FE] text-[#2B82FE] hover:bg-blue-50 rounded-full transition-colors text-sm font-medium"
+              >
+                Download Offline Version
+              </button>
             </div>
           </div>
           <div className="relative">
@@ -43,11 +70,19 @@ export function HeroSection() {
         </div>
         
         <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-8 text-lg">More than 25,000 Businesses Trust Salesbox</p>
+          <p className="text-gray-600 mb-8 text-lg">Businesses Trust Salesbox</p>
           <div className="grid grid-cols-6 gap-8 items-center justify-center">
-            {['Unilever', 'Binance', 'IBM REDBOOM', 'Mastercard', 'Volkswagen', 'Microsoft'].map((company, i) => (
-              <div key={i} className="text-gray-400 text-sm font-medium">
-                {company}
+            {[
+              { name: 'Unilever', Icon: Shield },
+              { name: 'Binance', Icon: Currency },
+              { name: 'IBM REDBOOM', Icon: Server },
+              { name: 'Mastercard', Icon: CreditCard },
+              { name: 'Volkswagen', Icon: Car },
+              { name: 'Microsoft', Icon: Laptop }
+            ].map(({ name, Icon }, i) => (
+              <div key={i} className="text-gray-400 hover:text-[#2B82FE] transition-colors">
+                <Icon className="w-16 h-16 p-2" strokeWidth={1} />
+                <span className="sr-only">{name}</span>
               </div>
             ))}
           </div>
