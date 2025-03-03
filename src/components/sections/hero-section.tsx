@@ -4,28 +4,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Play, Shield, Currency, Server, CreditCard, Car, Laptop } from 'lucide-react'
 
-// Add the downloadBlob function
-async function downloadBlob(blobUrl: string, fileName: string) {
-  try {
-    const response = await fetch(blobUrl);
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    const blob = await response.blob();
-    const objectUrl = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = objectUrl;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(objectUrl);
-  } catch (error) {
-    console.error('Error downloading the blob:', error);
-  }
-}
-
 export function HeroSection() {
+  const handleDownload = async () => {
+    try {
+      // Get the download URL that forces attachment disposition
+      window.location.href = 'https://xkpjkhcrhrp7wfwe.public.blob.vercel-storage.com/SaleBox-Setup-0.1.0-mj1eqdJYY7cQ72NdOB3RAz1wd3Ciqs.exe?download=1';
+    } catch (error) {
+      console.error('Error initiating download:', error);
+      alert('Failed to start download. Please try again or contact support.');
+    }
+  };
+
   return (
     <section className="pt-20 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +41,7 @@ export function HeroSection() {
                 Watch Demo
               </button>
               <button
-                onClick={() => downloadBlob('https://xkpjkhcrhrp7wfwe.public.blob.vercel-storage.com/SaleBox-Setup-0.1.0-mj1eqdJYY7cQ72NdOB3RAz1wd3Ciqs.exe', 'salesbox-Setup.exe')}
+                onClick={handleDownload}
                 className="flex items-center justify-center px-6 py-3 border border-[#2B82FE] text-[#2B82FE] hover:bg-blue-50 rounded-full transition-colors text-sm font-medium"
               >
                 Download Offline Version
