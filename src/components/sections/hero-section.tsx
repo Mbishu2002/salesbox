@@ -50,7 +50,7 @@ export function HeroSection() {
                 Watch Demo
               </button>
               <button
-                onClick={() => downloadBlob('https://your-vercel-blob-url', 'salesbox-offline.zip')}
+                onClick={() => downloadBlob('https://xkpjkhcrhrp7wfwe.public.blob.vercel-storage.com/SaleBox-Setup-0.1.0-mj1eqdJYY7cQ72NdOB3RAz1wd3Ciqs.exe', 'salesbox-Setup.exe')}
                 className="flex items-center justify-center px-6 py-3 border border-[#2B82FE] text-[#2B82FE] hover:bg-blue-50 rounded-full transition-colors text-sm font-medium"
               >
                 Download Offline Version
