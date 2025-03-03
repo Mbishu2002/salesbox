@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <PolicyLayout>
       <h1>Privacy Policy</h1>
-      <p>Salesbox ("we", "our", "us") is committed to protecting your privacy. This policy outlines how we handle your personal information when you use our business management platform.</p>
+      <p>Salesbox (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting your privacy. This policy outlines how we handle your personal information when you use our business management platform.</p>
 
       <h2>Information We Collect</h2>
       <ul>

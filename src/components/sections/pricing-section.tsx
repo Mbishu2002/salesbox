@@ -131,7 +131,7 @@ export function PricingSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Choose Plan</h2>
-          <h3 className="text-3xl font-bold mb-4">That's Right For You</h3>
+          <h3 className="text-3xl font-bold mb-4">That&apos;s Right For You</h3>
           <p className="text-gray-600 mb-8">Choose the plan that suits your needs best</p>
           
           {/* Billing Toggle */}
@@ -164,7 +164,7 @@ export function PricingSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {plans.map((plan, index) => (
+          {plans.map((plan) => (
             <div
               key={plan.name}
               className={`rounded-2xl p-8 transition-all duration-300 ${

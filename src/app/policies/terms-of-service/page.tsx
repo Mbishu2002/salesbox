@@ -4,7 +4,7 @@ export default function TermsOfService() {
   return (
     <PolicyLayout>
       <h1>Terms of Service</h1>
-      <p>By accessing Salesbox ("Platform"), you agree to these Terms of Service governing your use of our business management solutions.</p>
+      <p>By accessing Salesbox (&quot;Platform&quot;), you agree to these Terms of Service governing your use of our business management solutions.</p>
 
       <h2>Account Responsibilities</h2>
       <ul>

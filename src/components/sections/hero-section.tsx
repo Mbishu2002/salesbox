@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Play, Shield, Currency, Server, CreditCard, Car, Laptop } from 'lucide-react'
