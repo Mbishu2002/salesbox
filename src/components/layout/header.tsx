@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 export function Header() {
@@ -12,8 +13,14 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-blue-600">
-              SalesBox
+            <Link href="/" className="flex items-center gap-2">
+              <Image 
+                src="/resources/salesbox-logo.svg" 
+                alt="SalesBox Logo" 
+                width={40} 
+                height={40} 
+                className="w-auto h-8"
+              />
             </Link>
           </div>
           

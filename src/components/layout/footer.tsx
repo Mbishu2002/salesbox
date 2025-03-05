@@ -74,17 +74,17 @@ export function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/policies/privacy-policy" className="hover:text-white">
+                <Link href="/privacy-policy" className="hover:text-white">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/policies/terms-of-service" className="hover:text-white">
+                <Link href="/terms-of-service" className="hover:text-white">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/policies/cookie-policy" className="hover:text-white">
+                <Link href="/cookie-policy" className="hover:text-white">
                   Cookie Policy
                 </Link>
               </li>
@@ -93,7 +93,7 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Salesbox. All rights reserved.<br/>
+            &copy; {new Date().getFullYear()} CODEC. All rights reserved.<br/>
             <span className="text-gray-500">Headquarters: Douala, Cameroon</span>
           </p>
         </div>
