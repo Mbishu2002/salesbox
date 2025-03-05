@@ -164,8 +164,8 @@ export function PricingSection() {
         </div>
 
         {/* Pricing cards - Responsive grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {plans.map((plan, index) => (
+        <div className="grid md:grid-cols-3 gap-8">
+          {plans.map((plan) => (
             <div
               key={plan.name}
               className={`rounded-2xl p-6 sm:p-8 transition-all duration-300 ${

@@ -1,4 +1,4 @@
-import { PolicyLayout } from '../layout'
+import { PolicyLayout } from '@/components/layout/policy-layout'
 
 export default function TermsOfService() {
   return (
@@ -22,7 +22,7 @@ export default function TermsOfService() {
       </ul>
 
       <h2>Service Modifications</h2>
-      <p>We reserve the right to modify or discontinue services with notice. We're not liable for service interruptions.</p>
+      <p>We reserve the right to modify or discontinue services with notice. We&apos;re not liable for service interruptions.</p>
     </PolicyLayout>
   )
 } 

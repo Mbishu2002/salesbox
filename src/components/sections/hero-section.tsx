@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Play, Shield, Currency, Server, CreditCard, Car, Laptop } from 'lucide-react'
+import { ArrowRight, Shield, Currency, Server, CreditCard, Car, Laptop } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 export function HeroSection() {

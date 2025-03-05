@@ -1,4 +1,4 @@
-import { PolicyLayout } from '../layout'
+import { PolicyLayout } from '@/components/layout/policy-layout'
 
 export default function PrivacyPolicy() {
   return (
